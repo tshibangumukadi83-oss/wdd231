@@ -1,1 +1,101 @@
-# wdd231
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 | Home | Mukadi Tshibangu</title>
+    <meta name="description" content="WDD 231 Course Home Page">
+    <meta name="author" content="Mukadi Tshibangu">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course-list.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <img src="images/logo.svg" alt="Site Logo" width="60" height="60">
+        <span>Mukadi Tshibangu</span>
+    </div>
+
+    <button id="menu" aria-label="Open Navigation Menu">&#9776;</button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="final/index.html">Final</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<h1>Home</h1>
+
+<section>
+<h2>About Me</h2>
+
+<p>
+Welcome to my WDD 231 course homepage. This website showcases my web development projects and programming skills.
+</p>
+
+</section>
+
+<section>
+
+<h2>Course Work</h2>
+
+<div class="buttons">
+<button id="all">All Courses</button>
+<button id="wdd">WDD Courses</button>
+<button id="cse">CSE Courses</button>
+</div>
+
+<div id="courses"></div>
+
+<p id="credits"></p>
+
+</section>
+
+<section>
+
+<h2>Certificate</h2>
+
+<p>
+Software Development – Web and Computer Programming Certificate
+</p>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="social">
+
+<a href="https://github.com/tshibangumukadi83-oss" target="_blank">GitHub</a>
+
+<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+
+</div>
+
+<p>
+© <span id="currentyear"></span> Mukadi Tshibangu | Democratic Republic of the Congo
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+  </html>
