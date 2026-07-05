@@ -3,14 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>WDD 231 | Home | Mukadi Tshibangu</title>
-    <meta name="description" content="WDD 231 Course Home Page">
+
+    <meta name="description" content="Welcome to the WDD 231 course home page of Mukadi Tshibangu, featuring web development projects, coursework, and programming skills.">
+
     <meta name="author" content="Mukadi Tshibangu">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
+    <!-- JavaScript -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
     <script src="scripts/course-list.js" defer></script>
@@ -20,7 +30,6 @@
 <body>
 
 <header>
-
     <div class="logo">
         <img src="images/logo.svg" alt="Site Logo" width="60" height="60">
         <span>Mukadi Tshibangu</span>
@@ -35,67 +44,57 @@
             <li><a href="final/index.html">Final</a></li>
         </ul>
     </nav>
-
 </header>
 
 <main>
 
-<h1>Home</h1>
+    <h1>Home</h1>
 
-<section>
-<h2>About Me</h2>
+    <section>
+        <h2>About Me</h2>
+        <p>
+            Welcome to my WDD 231 course homepage. This website showcases my web development projects and programming skills.
+        </p>
+    </section>
 
-<p>
-Welcome to my WDD 231 course homepage. This website showcases my web development projects and programming skills.
-</p>
+    <section>
+        <h2>Course Work</h2>
 
-</section>
+        <div class="buttons">
+            <button id="all">All Courses</button>
+            <button id="wdd">WDD Courses</button>
+            <button id="cse">CSE Courses</button>
+        </div>
 
-<section>
+        <div id="courses"></div>
 
-<h2>Course Work</h2>
+        <p id="credits"></p>
+    </section>
 
-<div class="buttons">
-<button id="all">All Courses</button>
-<button id="wdd">WDD Courses</button>
-<button id="cse">CSE Courses</button>
-</div>
+    <section>
+        <h2>Certificate</h2>
 
-<div id="courses"></div>
-
-<p id="credits"></p>
-
-</section>
-
-<section>
-
-<h2>Certificate</h2>
-
-<p>
-Software Development – Web and Computer Programming Certificate
-</p>
-
-</section>
+        <p>
+            Software Development – Web and Computer Programming Certificate
+        </p>
+    </section>
 
 </main>
 
 <footer>
 
-<div class="social">
+    <div class="social">
+        <a href="https://github.com/tshibangumukadi83-oss" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+    </div>
 
-<a href="https://github.com/tshibangumukadi83-oss" target="_blank">GitHub</a>
+    <p>
+        &copy; <span id="currentyear"></span> Mukadi Tshibangu | Democratic Republic of the Congo
+    </p>
 
-<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-
-</div>
-
-<p>
-© <span id="currentyear"></span> Mukadi Tshibangu | Democratic Republic of the Congo
-</p>
-
-<p id="lastModified"></p>
+    <p id="lastModified"></p>
 
 </footer>
 
 </body>
-  </html>
+</html>
