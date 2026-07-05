@@ -1,1 +1,83 @@
+/* styles/larger.css */
 
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    /* Cache le bouton hamburger */
+    #menu {
+        display: none;
+    }
+
+    /* Navigation horizontale */
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        gap: 1rem;
+        margin: 0;
+    }
+
+    .navigation li {
+        list-style: none;
+    }
+
+    .navigation a {
+        padding: .75rem 1rem;
+        border-radius: 5px;
+        transition: background-color .3s ease;
+    }
+
+    .navigation a:hover,
+    .navigation a.active {
+        background-color: #0055aa;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /* Les trois sections côte à côte */
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+        text-align: left;
+        margin-bottom: 1rem;
+    }
+
+    section {
+        height: 100%;
+    }
+
+    /* Les cartes de cours sur plusieurs colonnes */
+    #courses {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .social {
+        justify-content: center;
+    }
+      }
