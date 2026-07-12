@@ -1,1 +1,65 @@
-
+[
+  {
+    "name": "Katanga Mining Services",
+    "address": "25 Lumumba Avenue, Lubumbashi",
+    "phone": "+243 990 111 111",
+    "website": "https://www.katangamining.cd",
+    "image": "katanga-mining.webp",
+    "membership": 3,
+    "description": "Mining equipment and industrial services."
+  },
+  {
+    "name": "Rawbank Lubumbashi",
+    "address": "10 Mobutu Avenue, Lubumbashi",
+    "phone": "+243 990 222 222",
+    "website": "https://www.rawbank.com",
+    "image": "rawbank.webp",
+    "membership": 3,
+    "description": "Banking and financial services."
+  },
+  {
+    "name": "Orange RDC",
+    "address": "City Center, Lubumbashi",
+    "phone": "+243 990 333 333",
+    "website": "https://www.orange.cd",
+    "image": "orange.webp",
+    "membership": 2,
+    "description": "Telecommunications company."
+  },
+  {
+    "name": "Lubumbashi Supermarket",
+    "address": "Kasapa Road, Lubumbashi",
+    "phone": "+243 990 444 444",
+    "website": "https://example.com",
+    "image": "supermarket.webp",
+    "membership": 1,
+    "description": "Groceries and household products."
+  },
+  {
+    "name": "Congo Travel Agency",
+    "address": "Golf District, Lubumbashi",
+    "phone": "+243 990 555 555",
+    "website": "https://example.com",
+    "image": "travel.webp",
+    "membership": 2,
+    "description": "Travel and tourism services."
+  },
+  {
+    "name": "Tech Solutions RDC",
+    "address": "Kenya District, Lubumbashi",
+    "phone": "+243 990 666 666",
+    "website": "https://example.com",
+    "image": "tech.webp",
+    "membership": 1,
+    "description": "Computer sales and IT support."
+  },
+  {
+    "name": "Lubumbashi Medical Center",
+    "address": "Hewa Bora Avenue",
+    "phone": "+243 990 777 777",
+    "website": "https://example.com",
+    "image": "hospital.webp",
+    "membership": 3,
+    "description": "Private hospital and healthcare services."
+  }
+]
