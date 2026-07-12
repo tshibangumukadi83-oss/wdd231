@@ -1,0 +1,32 @@
+@media only screen and (min-width: 768px) {
+
+#menu {
+    display: none;
+}
+
+nav {
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.list section {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.list img {
+    width: 150px;
+    height: 150px;
+}
+
+}
