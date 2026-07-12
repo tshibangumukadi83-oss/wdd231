@@ -1,5 +1,17 @@
 @media only screen and (min-width: 768px) {
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
 #menu {
     display: none;
 }
@@ -11,22 +23,58 @@ nav {
 nav ul {
     display: flex;
     gap: 2rem;
+    justify-content: flex-end;
+}
+
+nav li {
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
 }
 
 .grid {
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.grid section {
+    transition: transform .3s ease;
+}
+
+.grid section:hover {
+    transform: translateY(-5px);
+}
+
+.list {
+    display: block;
 }
 
 .list section {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    gap: 1rem;
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .list img {
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding: 2rem;
+}
+
+footer p {
+    margin: 0;
 }
 
 }
