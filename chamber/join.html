@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -11,23 +14,17 @@
 <meta name="author" content="Mukadi Tshibangu Delphin">
 
 
-<!-- Favicon -->
-
 <link rel="icon" href="images/favicon.png">
 
 
-<!-- Open Graph -->
-
-<meta property="og:title" content="Join Kolwezi Chamber of Commerce">
+<meta property="og:title" content="Join Kolwezi Chamber of Commerce Business Network">
 
 <meta property="og:description" content="Apply for membership to the Kolwezi Chamber of Commerce and discover opportunities for businesses and organizations.">
 
-<meta property="og:image" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/images/kolwezi-chamber.jpg">
+<meta property="og:image" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/images/favicon.png">
 
 <meta property="og:url" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/join.html">
 
-
-<!-- Google Fonts -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -35,8 +32,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-
-<!-- CSS -->
 
 <link rel="stylesheet" href="styles/normalize.css">
 
@@ -46,3 +41,203 @@
 <script src="scripts/chamber.js" defer></script>
 
 </head>
+
+
+<body>
+
+
+<header>
+
+<p>Kolwezi Chamber of Commerce</p>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="directory.html">Directory</a>
+
+<a href="discover.html">Discover</a>
+
+<a href="join.html">Join</a>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+
+<h1>Join Kolwezi Chamber of Commerce</h1>
+
+
+<h2>Membership Application</h2>
+
+
+<form method="get" action="thankyou.html">
+
+
+<label>
+First Name:
+<input type="text" name="first" title="First name" autocomplete="given-name" required>
+</label>
+
+
+<label>
+Last Name:
+<input type="text" name="last" title="Last name" autocomplete="family-name" required>
+</label>
+
+
+<label>
+Organization Title:
+<input type="text" name="organization-title" title="Organization title" autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+</label>
+
+
+<label>
+Email:
+<input type="email" name="email" title="Email address" autocomplete="email" placeholder="example@email.com" required>
+</label>
+
+
+<label>
+Mobile Phone:
+<input type="tel" name="phone" title="Mobile phone" autocomplete="tel" required>
+</label>
+
+
+<label>
+Organization Name:
+<input type="text" name="organization" title="Organization name" autocomplete="organization" required>
+</label>
+
+
+<label>
+Membership Level:
+
+<select name="membership">
+
+<option value="np">NP Membership</option>
+
+<option value="bronze">Bronze Membership</option>
+
+<option value="silver">Silver Membership</option>
+
+<option value="gold">Gold Membership</option>
+
+</select>
+
+</label>
+
+
+
+<label>
+Organization Description:
+
+<textarea name="description" title="Organization description"></textarea>
+
+</label>
+
+
+
+<input type="hidden" name="timestamp" id="timestamp">
+
+
+<button type="submit">Submit Membership Application</button>
+
+
+</form>
+
+
+
+<section class="membership-cards">
+
+
+<div class="card">
+<h3>NP Membership</h3>
+<p>Free membership for nonprofit organizations.</p>
+<a href="#npModal">Learn More</a>
+</div>
+
+
+<div class="card">
+<h3>Bronze Membership</h3>
+<p>Basic business benefits.</p>
+<a href="#bronzeModal">Learn More</a>
+</div>
+
+
+<div class="card">
+<h3>Silver Membership</h3>
+<p>Advertising and event benefits.</p>
+<a href="#silverModal">Learn More</a>
+</div>
+
+
+<div class="card">
+<h3>Gold Membership</h3>
+<p>Premium business benefits.</p>
+<a href="#goldModal">Learn More</a>
+</div>
+
+
+</section>
+
+
+
+<div id="npModal" class="modal">
+<div class="modal-content">
+<a href="#">×</a>
+<h2>NP Benefits</h2>
+<p>Networking and community opportunities.</p>
+</div>
+</div>
+
+
+<div id="bronzeModal" class="modal">
+<div class="modal-content">
+<a href="#">×</a>
+<h2>Bronze Benefits</h2>
+<p>Training and business events.</p>
+</div>
+</div>
+
+
+<div id="silverModal" class="modal">
+<div class="modal-content">
+<a href="#">×</a>
+<h2>Silver Benefits</h2>
+<p>Advertising and discounts.</p>
+</div>
+</div>
+
+
+<div id="goldModal" class="modal">
+<div class="modal-content">
+<a href="#">×</a>
+<h2>Gold Benefits</h2>
+<p>Premium advertising and promotion.</p>
+</div>
+</div>
+
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 Kolwezi Chamber of Commerce
+</p>
+
+</footer>
+
+
+
+</body>
+
+               </html>
