@@ -17,6 +17,14 @@ header {
     background-color: #003366;
     color: white;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+header img {
+    border-radius: 50%;
 }
 
 .logo {
@@ -60,10 +68,13 @@ nav li {
     margin: .5rem 0;
 }
 
-nav a {
+nav a,
+.navigation a {
     color: white;
     text-decoration: none;
     font-weight: 500;
+    display: block;
+    padding: .5rem;
 }
 
 nav a:hover,
@@ -79,10 +90,12 @@ main {
     padding: 1rem;
 }
 
-main h1 {
+main h1,
+main > h1 {
     color: #003366;
     text-align: center;
-    margin-bottom: .5rem;
+    font-size: 2rem;
+    margin: 1rem 0;
 }
 
 main h2 {
@@ -110,6 +123,12 @@ main h2 {
 
 .view-buttons button:hover {
     background-color: #00509e;
+}
+
+a:focus,
+button:focus {
+    outline: 3px solid #0056b3;
+    outline-offset: 2px;
 }
 
 /* Grid */
@@ -169,29 +188,20 @@ main h2 {
     margin-bottom: 1rem;
 }
 
-/* Footer */
-
-footer {
-    background-color: #003366;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    margin-top: 2rem;
-}
-
-footer p {
-    margin: .5rem 0;
-}
 /* HOME PAGE */
 
 .hero {
     position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 }
 
 .hero img {
     width: 100%;
     height: auto;
+    min-height: 250px;
     display: block;
+    object-fit: cover;
 }
 
 .hero-text {
@@ -199,19 +209,29 @@ footer p {
     top: 50%;
     left: 10%;
     transform: translateY(-50%);
-    color: white;
+    background: rgba(0, 0, 0, 0.45);
+    color: #ffffff;
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 90%;
 }
 
 .hero-text h2 {
+    color: #ffffff;
     font-size: 2rem;
     margin-bottom: 1rem;
-    text-shadow: 2px 2px 6px black;
+    text-shadow: 2px 2px 6px #000;
+}
+
+.hero-text p {
+    color: #ffffff;
+    font-weight: 500;
 }
 
 .cta {
     display: inline-block;
     background: #0056b3;
-    color: white;
+    color: #ffffff;
     padding: .8rem 1.5rem;
     text-decoration: none;
     border-radius: 8px;
@@ -232,10 +252,24 @@ footer p {
 .events,
 .weather,
 .spotlights {
-    background: #f4f4f4;
+    background: #ffffff;
+    color: #222;
     border-radius: 10px;
     padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+}
+
+.events h2,
+.weather h2,
+.spotlights h2 {
+    color: #003366;
+}
+
+#current-temp,
+#weather-desc,
+#forecast {
+    text-align: center;
+    margin: .5rem;
 }
 
 #spotlight-container {
@@ -245,6 +279,7 @@ footer p {
 
 .spotlight-card {
     text-align: center;
+    background: #ffffff;
     border: 1px solid #ccc;
     border-radius: 10px;
     padding: 1rem;
@@ -254,111 +289,53 @@ footer p {
     width: 120px;
     height: auto;
     margin-bottom: .5rem;
-    }
-/* Additional Home Page Improvements */
-
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
 }
-
-header img {
-    border-radius: 50%;
-}
-
-
-/* Main title */
-main > h1 {
-    font-size: 2rem;
-    color: #003366;
-    margin: 1rem 0;
-}
-
-
-/* Hero improvement */
-.hero {
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-.hero img {
-    width: 100%;
-    min-height: 250px;
-    object-fit: cover;
-}
-
-
-/* Hero text readability */
-.hero-text {
-    background: rgba(0, 0, 0, 0.45);
-    padding: 1rem;
-    border-radius: 8px;
-    max-width: 90%;
-}
-
-
-.hero-text p {
-    color: white;
-    font-weight: 500;
-}
-
-
-/* Home sections */
-.events,
-.weather,
-.spotlights {
-    background-color: white;
-    color: #222;
-}
-
-
-.events h2,
-.weather h2,
-.spotlights h2 {
-    color: #003366;
-}
-
-
-/* Weather information */
-#current-temp,
-#weather-desc,
-#forecast {
-    text-align: center;
-    margin: .5rem;
-}
-
-
-/* Spotlight cards */
-.spotlight-card {
-    background-color: white;
-}
-
 
 .spotlight-card h3 {
     color: #003366;
 }
 
-
 .spotlight-card p {
     color: #222;
 }
+/* Footer */
 
-/* Mobile navigation spacing */
-.navigation a {
-    display: block;
-    padding: .5rem;
-}
-
-/* Accessibility improvement */
-a:focus,
-button:focus {
-    outline: 3px solid #0056b3;
-    outline-offset: 2px;
-}
-
-/* Hero title */
-.hero-text h2 {
+footer {
+    background-color: #003366;
     color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: .5rem 0;
+}
+
+/* Utility */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section {
+    margin-bottom: 1rem;
+}
+
+button,
+a {
+    transition: all .3s ease;
+}
+
+button {
+    font-family: inherit;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
 }
