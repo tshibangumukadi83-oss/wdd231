@@ -1,9 +1,15 @@
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
     header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 1rem 3rem;
+    }
+
+    header img {
+        width: 90px;
+        height: 90px;
     }
 
     #menu {
@@ -23,6 +29,17 @@
         margin: 0;
     }
 
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+    }
+
+    main > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
@@ -39,59 +56,10 @@
         height: 180px;
     }
 
-    footer {
-        display: flex;
-        justify-content: space-around;
-    }
-
-}
-@media (min-width: 768px) {
-
-    .home-grid {
-        grid-template-columns: 1fr 1fr 1fr;
-        align-items: start;
-    }
-
-    #spotlight-container {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-
-    .hero-text h2 {
-        font-size: 3rem;
-    }
-}
-/* Desktop Improvements */
-
-@media (min-width: 768px) {
-
-    header {
-        padding: 1rem 3rem;
-    }
-
-    header img {
-        width: 90px;
-        height: 90px;
-    }
-
-
-    main {
-        max-width: 1200px;
-        margin: auto;
-        padding: 2rem;
-    }
-
-
-    main > h1 {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
-    }
-
-
     .hero img {
         height: 450px;
         object-fit: cover;
     }
-
 
     .hero-text {
         left: 8%;
@@ -99,26 +67,28 @@
         padding: 1.5rem;
     }
 
-
     .hero-text h2 {
         font-size: 3rem;
+        color: #fff;
     }
-
 
     .hero-text p {
         font-size: 1.2rem;
     }
 
-
     .cta {
         transition: background-color .3s ease;
     }
 
-
     .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
         margin-top: 2rem;
     }
 
+    #spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
 
     .events,
     .weather,
@@ -126,19 +96,17 @@
         min-height: 250px;
     }
 
-
     .spotlight-card {
         transition: transform .3s ease;
     }
-
 
     .spotlight-card:hover {
         transform: translateY(-5px);
     }
 
-
     footer {
+        display: flex;
+        justify-content: space-around;
         padding: 2rem;
     }
-
 }
