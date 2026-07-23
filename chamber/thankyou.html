@@ -1,1 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Thank You | Kolwezi Chamber of Commerce</title>
+
+<meta name="description" content="Membership application confirmation">
+
+<link rel="stylesheet" href="styles/chamber.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>Kolwezi Chamber of Commerce</h1>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="directory.html">Directory</a>
+
+<a href="discover.html">Discover</a>
+
+<a href="join.html">Join</a>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+<h2>Thank You For Applying!</h2>
+
+
+<section class="confirmation">
+
+
+<p>Your membership application has been received.</p>
+
+
+<h3>Application Information</h3>
+
+
+<p>
+<strong>First Name:</strong>
+<span id="first"></span>
+</p>
+
+
+<p>
+<strong>Last Name:</strong>
+<span id="last"></span>
+</p>
+
+
+<p>
+<strong>Email:</strong>
+<span id="email"></span>
+</p>
+
+
+<p>
+<strong>Mobile Phone:</strong>
+<span id="phone"></span>
+</p>
+
+
+<p>
+<strong>Organization:</strong>
+<span id="organization"></span>
+</p>
+
+
+<p>
+<strong>Date Submitted:</strong>
+<span id="timestamp"></span>
+</p>
+
+
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+<p>
+© 2026 Kolwezi Chamber of Commerce
+</p>
+
+</footer>
+
+
+
+<script>
+
+const params = new URLSearchParams(window.location.search);
+
+
+document.querySelector("#first").textContent =
+params.get("first");
+
+
+document.querySelector("#last").textContent =
+params.get("last");
+
+
+document.querySelector("#email").textContent =
+params.get("email");
+
+
+document.querySelector("#phone").textContent =
+params.get("phone");
+
+
+document.querySelector("#organization").textContent =
+params.get("organization");
+
+
+document.querySelector("#timestamp").textContent =
+params.get("timestamp");
+
+
+</script>
+
+
+</body>
+
+</html>
