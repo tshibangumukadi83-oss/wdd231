@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Kolwezi Chamber of Commerce</title>
+    <meta name="description" content="Official Kolwezi Chamber of Commerce website.">
+    <meta name="author" content="Mukadi Tshibangu">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+</head>
+
+<body>
+
+<header>
+    <img src="images/logo.webp" alt="Kolwezi Chamber Logo" width="80">
+    <h1>Kolwezi Chamber of Commerce</h1>
+
+    <button id="menu"></button>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+<section class="hero">
+
+    <img src="images/hero.webp" alt="Kolwezi">
+
+    <div class="hero-text">
+
+        <h2>Grow Your Business With Us</h2>
+
+        <a class="cta" href="join.html">
+            Join the Chamber
+        </a>
+
+    </div>
+
+</section>
+
+<section class="home-grid">
+
+<div class="events">
+
+<h2>Current Events</h2>
+
+<p>
+Business networking meeting every Friday at 3:00 PM.
+</p>
+
+<p>
+Upcoming entrepreneurship workshop next Saturday.
+</p>
+
+</div>
+
+<div class="weather">
+
+<h2>Weather</h2>
+
+<p id="temperature"></p>
+
+<p id="description"></p>
+
+<div id="forecast"></div>
+
+</div>
+
+<div class="spotlights">
+
+<h2>Member Spotlights</h2>
+
+<div id="spotlight-container"></div>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>
+&copy; <span id="year"></span> Kolwezi Chamber of Commerce
+</p>
+
+<p id="lastModified"></p>
+
+</footer>
+
+</body>
+
+</html>
