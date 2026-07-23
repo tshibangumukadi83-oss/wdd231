@@ -357,4 +357,6 @@ main > h1 {
 a:focus,
 button:focus {
     outline: 3px solid #0056b3;
+    .hero-text h2 {
+    color: white;
     }
