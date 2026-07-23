@@ -1,50 +1,69 @@
 const spotlightContainer = document.querySelector("#spotlight-container");
 
-async function loadSpotlights() {
+async function getSpotlights() {
     try {
         const response = await fetch("data/members.json");
+
+        if (!response.ok) {
+            throw new Error("Unable to load member data.");
+        }
+
         const members = await response.json();
 
-        const qualified = members.filter(member =>
-            member.membership === 2 ||
-            member.membership === 3
+        // Garder uniquement les membres Gold (3) et Silver (2)
+        const qualifiedMembers = members.filter(member =>
+            member.membership === 2 || member.membership === 3
         );
 
-        const shuffled = qualified.sort(() => Math.random() - 0.5);
+        // Mélanger les membres
+        qualifiedMembers.sort(() => Math.random() - 0.5);
 
-        const selected = shuffled.slice(0, 3);
+        // Afficher 3 membres
+        const selectedMembers = qualifiedMembers.slice(0, 3);
 
-        spotlightContainer.innerHTML = "";
-
-        selected.forEach(member => {
-
-            const card = document.createElement("section");
-            card.classList.add("spotlight-card");
-
-            card.innerHTML = `
-    <img src="images/${member.image}" alt="${member.name}" loading="lazy">
-
-    <h3>${member.name}</h3>
-
-    <p>${member.address}</p>
-
-    <p>${member.phone}</p>
-
-    <a href="${member.website}" target="_blank">
-        Visit Website
-    </a>
-
-    <p><strong>${
-        member.membership === 3 ? "Gold Member" : "Silver Member"
-    }</strong></p>
-`;
-
-            spotlightContainer.appendChild(card);
-        });
+        displaySpotlights(selectedMembers);
 
     } catch (error) {
-        console.error("Spotlight Error:", error);
+        console.error(error);
     }
 }
 
-loadSpotlights();
+function displaySpotlights(members) {
+
+    spotlightContainer.innerHTML = "";
+
+    members.forEach(member => {
+
+        const card = document.createElement("section");
+        card.classList.add("spotlight-card");
+
+        const membership =
+            member.membership === 3 ? "Gold Member" : "Silver Member";
+
+        card.innerHTML = `
+            <img src="images/${member.image}"
+                 alt="${member.name} logo"
+                 loading="lazy">
+
+            <h3>${member.name}</h3>
+
+            <p>${member.description}</p>
+
+            <p><strong>Address:</strong> ${member.address}</p>
+
+            <p><strong>Phone:</strong> ${member.phone}</p>
+
+            <p>
+                <a href="${member.website}" target="_blank">
+                    Visit Website
+                </a>
+            </p>
+
+            <p><strong>${membership}</strong></p>
+        `;
+
+        spotlightContainer.appendChild(card);
+    });
+}
+
+getSpotlights();
