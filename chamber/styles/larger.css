@@ -1,7 +1,9 @@
 @media (min-width: 768px) {
 
+    /* HEADER DESKTOP */
+
     header {
-        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         padding: 1rem 3rem;
@@ -11,6 +13,9 @@
         width: 90px;
         height: 90px;
     }
+
+
+    /* NAVIGATION */
 
     #menu {
         display: none;
@@ -29,6 +34,9 @@
         margin: 0;
     }
 
+
+    /* MAIN */
+
     main {
         max-width: 1200px;
         margin: auto;
@@ -40,9 +48,15 @@
         margin-bottom: 2rem;
     }
 
+
+    /* DIRECTORY GRID */
+
     .grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
+
+
+    /* LIST VIEW */
 
     .list section {
         display: grid;
@@ -55,6 +69,9 @@
         width: 180px;
         height: 180px;
     }
+
+
+    /* HERO */
 
     .hero img {
         height: 450px;
@@ -69,26 +86,37 @@
 
     .hero-text h2 {
         font-size: 3rem;
-        color: #fff;
+        color: #ffffff;
     }
 
     .hero-text p {
         font-size: 1.2rem;
+        color: #ffffff;
     }
+
+
+    /* BUTTON */
 
     .cta {
         transition: background-color .3s ease;
     }
 
+
+    /* HOME GRID */
+
     .home-grid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3, 1fr);
         align-items: start;
         margin-top: 2rem;
     }
 
+
+    /* SPOTLIGHT */
+
     #spotlight-container {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     }
+
 
     .events,
     .weather,
@@ -96,17 +124,23 @@
         min-height: 250px;
     }
 
+
     .spotlight-card {
         transition: transform .3s ease;
     }
 
+
     .spotlight-card:hover {
         transform: translateY(-5px);
     }
+
+
+    /* FOOTER */
 
     footer {
         display: flex;
         justify-content: space-around;
         padding: 2rem;
     }
+
 }
