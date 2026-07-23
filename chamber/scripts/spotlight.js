@@ -6,8 +6,8 @@ async function loadSpotlights() {
         const members = await response.json();
 
         const qualified = members.filter(member =>
-            member.membership === "Gold" ||
-            member.membership === "Silver"
+            member.membership === 2 ||
+            member.membership === 3
         );
 
         const shuffled = qualified.sort(() => Math.random() - 0.5);
