@@ -1,260 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Join | Kolwezi Chamber of Commerce</title>
-    <meta name="description" content="Apply for membership to the Kolwezi Chamber of Commerce.">
+<meta charset="UTF-8">
 
-    <link rel="stylesheet" href="styles/chamber.css">
-    <script src="scripts/chamber.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Join | Kolwezi Chamber of Commerce</title>
+
+<meta name="description" content="Apply for membership to the Kolwezi Chamber of Commerce and connect with local business opportunities.">
+
+<meta name="author" content="Mukadi Tshibangu Delphin">
+
+
+<!-- Favicon -->
+
+<link rel="icon" href="images/favicon.png">
+
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="Join Kolwezi Chamber of Commerce">
+
+<meta property="og:description" content="Apply for membership to the Kolwezi Chamber of Commerce and discover opportunities for businesses and organizations.">
+
+<meta property="og:image" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/images/kolwezi-chamber.jpg">
+
+<meta property="og:url" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/join.html">
+
+
+<!-- Google Fonts -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+<!-- CSS -->
+
+<link rel="stylesheet" href="styles/normalize.css">
+
+<link rel="stylesheet" href="styles/chamber.css">
+
+
+<script src="scripts/chamber.js" defer></script>
+
 </head>
-
-<body>
-
-<header>
-    <h1>Kolwezi Chamber of Commerce</h1>
-
-    <button id="menu">☰</button>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
-        <a href="discover.html">Discover</a>
-        <a href="join.html">Join</a>
-    </nav>
-</header>
-
-
-<main>
-
-<h2>Membership Application</h2>
-
-<div class="join-container">
-
-<section class="form-section">
-
-<form method="get" action="thankyou.html">
-
-<label>
-    First Name:
-    <input 
-        type="text"
-        name="first"
-        title="Applicant first name"
-        autocomplete="given-name"
-        required>
-</label>
-
-
-<label>
-    Last Name:
-    <input 
-        type="text"
-        name="last"
-        title="Applicant last name"
-        autocomplete="family-name"
-        required>
-</label>
-
-
-<label>
-    Organizational Title:
-    <input 
-        type="text"
-        name="organization-title"
-        title="Your position in the organization"
-        autocomplete="organization-title"
-        pattern="[A-Za-z\s-]{7,}">
-</label>
-
-
-<label>
-    Email:
-    <input 
-        type="email"
-        name="email"
-        title="Email address"
-        autocomplete="email"
-        placeholder="example@email.com"
-        required>
-</label>
-
-
-<label>
-    Mobile Phone:
-    <input 
-        type="tel"
-        name="phone"
-        title="Mobile phone number"
-        autocomplete="tel"
-        required>
-</label>
-
-
-<label>
-    Business/Organization Name:
-    <input 
-        type="text"
-        name="organization"
-        title="Business or organization name"
-        autocomplete="organization"
-        required>
-</label>
-
-
-<label>
-    Membership Level:
-
-    <select name="membership" title="Select membership level">
-
-        <option value="np">
-            NP Membership
-        </option>
-
-        <option value="bronze">
-            Bronze Membership
-        </option>
-
-        <option value="silver">
-            Silver Membership
-        </option>
-
-        <option value="gold">
-            Gold Membership
-        </option>
-
-    </select>
-
-</label>
-
-
-<label>
-    Organization Description:
-
-    <textarea 
-        name="description"
-        title="Organization description"
-        rows="5"></textarea>
-
-</label>
-
-
-<input 
-    type="hidden"
-    name="timestamp"
-    id="timestamp">
-
-
-<input 
-    type="submit"
-    value="Submit Membership Application">
-
-</form>
-
-</section>
-
-
-
-<section class="membership-cards">
-
-
-<div class="card">
-<h3>NP Membership</h3>
-<p>Free membership for nonprofit organizations.</p>
-<a href="#npModal">Learn More</a>
-</div>
-
-
-<div class="card">
-<h3>Bronze Membership</h3>
-<p>Basic business benefits.</p>
-<a href="#bronzeModal">Learn More</a>
-</div>
-
-
-<div class="card">
-<h3>Silver Membership</h3>
-<p>More advertising and events.</p>
-<a href="#silverModal">Learn More</a>
-</div>
-
-
-<div class="card">
-<h3>Gold Membership</h3>
-<p>Premium benefits and promotions.</p>
-<a href="#goldModal">Learn More</a>
-</div>
-
-
-</section>
-
-</div>
-
-
-
-<!-- MODALS -->
-
-<div id="npModal" class="modal">
-<div class="modal-content">
-<a href="#" class="close">×</a>
-<h2>NP Membership Benefits</h2>
-<p>
-Free membership, networking opportunities,
-and community events.
-</p>
-</div>
-</div>
-
-
-<div id="bronzeModal" class="modal">
-<div class="modal-content">
-<a href="#" class="close">×</a>
-<h2>Bronze Membership Benefits</h2>
-<p>
-Business networking, training sessions,
-and event participation.
-</p>
-</div>
-</div>
-
-
-<div id="silverModal" class="modal">
-<div class="modal-content">
-<a href="#" class="close">×</a>
-<h2>Silver Membership Benefits</h2>
-<p>
-Advertising opportunities, discounts,
-and special events.
-</p>
-</div>
-</div>
-
-
-<div id="goldModal" class="modal">
-<div class="modal-content">
-<a href="#" class="close">×</a>
-<h2>Gold Membership Benefits</h2>
-<p>
-Premium advertising, homepage spotlight,
-and exclusive benefits.
-</p>
-</div>
-</div>
-
-
-</main>
-
-
-<footer>
-
-<p>
-© 2026 Kolwezi Chamber of Commerce
-</p>
-
-</footer>
-
-
-</body>
-  </html>
