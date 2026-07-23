@@ -345,18 +345,20 @@ main > h1 {
     color: #222;
 }
 
-
 /* Mobile navigation spacing */
 .navigation a {
     display: block;
     padding: .5rem;
 }
 
-
 /* Accessibility improvement */
 a:focus,
 button:focus {
     outline: 3px solid #0056b3;
-    .hero-text h2 {
-    color: white;
-    }
+    outline-offset: 2px;
+}
+
+/* Hero title */
+.hero-text h2 {
+    color: #ffffff;
+}
