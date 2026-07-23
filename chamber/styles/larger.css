@@ -45,3 +45,18 @@
     }
 
 }
+@media (min-width: 768px) {
+
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: start;
+    }
+
+    #spotlight-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .hero-text h2 {
+        font-size: 3rem;
+    }
+}
