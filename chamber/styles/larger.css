@@ -60,3 +60,85 @@
         font-size: 3rem;
     }
 }
+/* Desktop Improvements */
+
+@media (min-width: 768px) {
+
+    header {
+        padding: 1rem 3rem;
+    }
+
+    header img {
+        width: 90px;
+        height: 90px;
+    }
+
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2rem;
+    }
+
+
+    main > h1 {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+    }
+
+
+    .hero img {
+        height: 450px;
+        object-fit: cover;
+    }
+
+
+    .hero-text {
+        left: 8%;
+        max-width: 500px;
+        padding: 1.5rem;
+    }
+
+
+    .hero-text h2 {
+        font-size: 3rem;
+    }
+
+
+    .hero-text p {
+        font-size: 1.2rem;
+    }
+
+
+    .cta {
+        transition: background-color .3s ease;
+    }
+
+
+    .home-grid {
+        margin-top: 2rem;
+    }
+
+
+    .events,
+    .weather,
+    .spotlights {
+        min-height: 250px;
+    }
+
+
+    .spotlight-card {
+        transition: transform .3s ease;
+    }
+
+
+    .spotlight-card:hover {
+        transform: translateY(-5px);
+    }
+
+
+    footer {
+        padding: 2rem;
+    }
+
+}
