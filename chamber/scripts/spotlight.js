@@ -22,17 +22,22 @@ async function loadSpotlights() {
             card.classList.add("spotlight-card");
 
             card.innerHTML = `
-                <img src="${member.image}" alt="${member.name} logo" loading="lazy">
-                <h3>${member.name}</h3>
-                <p><strong>Phone:</strong> ${member.phone}</p>
-                <p><strong>Address:</strong> ${member.address}</p>
-                <p>
-                    <a href="${member.website}" target="_blank">
-                        Visit Website
-                    </a>
-                </p>
-                <p><strong>Membership:</strong> ${member.membership}</p>
-            `;
+    <img src="images/${member.image}" alt="${member.name}" loading="lazy">
+
+    <h3>${member.name}</h3>
+
+    <p>${member.address}</p>
+
+    <p>${member.phone}</p>
+
+    <a href="${member.website}" target="_blank">
+        Visit Website
+    </a>
+
+    <p><strong>${
+        member.membership === 3 ? "Gold Member" : "Silver Member"
+    }</strong></p>
+`;
 
             spotlightContainer.appendChild(card);
         });
