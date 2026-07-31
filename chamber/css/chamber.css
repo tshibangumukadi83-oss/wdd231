@@ -11,6 +11,7 @@
     --dark-color: #003366;
     --light-color: #eef6ff;
     --text-color: #333333;
+    --border-color: #dddddd;
     --white: #ffffff;
     --accent-color: #ffd700;
 }
@@ -44,7 +45,7 @@ header img {
 
 #menu {
     display: none;
-    background: var(--dark-color);
+    background-color: var(--dark-color);
     color: var(--white);
     border: none;
     font-size: 1.5rem;
@@ -87,6 +88,11 @@ h2 {
     color: var(--dark-color);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 footer {
     margin-top: 2rem;
     padding: 1rem;
@@ -95,12 +101,7 @@ footer {
     text-align: center;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Mobile */
+/* Mobile Navigation */
 
 @media (max-width: 768px) {
 
@@ -125,6 +126,7 @@ img {
 
     .navigation a {
         display: block;
+        width: 100%;
         padding: 1rem;
         text-align: center;
     }
