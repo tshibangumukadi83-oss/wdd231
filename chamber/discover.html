@@ -4,61 +4,123 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Discover Kolwezi | Chamber of Commerce</title>
-    <meta name="description" content="Discover Kolwezi and the attractions of Lualaba Province.">
+    <title>Discover Kolwezi | Kolwezi Chamber of Commerce</title>
+
+    <meta name="description" content="Discover Kolwezi and the attractions, culture, tourism, and business opportunities of Lualaba Province.">
+
     <meta name="author" content="Mukadi Tshibangu">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Kolwezi Chamber of Commerce">
-    <meta property="og:description" content="Discover the City of Kolwezi">
-    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:title" content="Discover Kolwezi | Kolwezi Chamber of Commerce">
+
+    <meta property="og:description" content="Explore Kolwezi, a growing city in Lualaba Province with cultural attractions, tourism sites, and opportunities for local businesses.">
+
+    <meta property="og:image" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/images/hero.webp">
+
     <meta property="og:url" content="https://tshibangumukadi83-oss.github.io/wdd231/chamber/discover.html">
 
+
+    <!-- Favicon -->
     <link rel="icon" href="favicon.ico">
+
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <!-- Existing CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/chamber.css">
 
-    <!-- Discover CSS -->
     <link rel="stylesheet" href="css/discover.css">
 
-    <!-- JavaScript Module -->
+
+    <!-- JavaScript -->
     <script type="module" src="js/discover.js" defer></script>
+
 </head>
+
 
 <body>
 
+
 <header>
 
-    <!-- Utilise exactement le même header que tes autres pages -->
+    <div class="site-header">
+
+        <img src="images/logo.webp" alt="Kolwezi Chamber of Commerce logo">
+
+        <div>
+            <h2>Kolwezi Chamber of Commerce</h2>
+            <p>Connecting businesses and community</p>
+        </div>
+
+    </div>
+
 
 </header>
 
+
+
 <nav>
 
-    <!-- Utilise exactement la même navigation -->
+    <button id="menu" aria-label="Open Menu">☰</button>
+
+    <ul class="navigation">
+
+        <li><a href="index.html">Home</a></li>
+
+        <li><a href="discover.html" class="active">Discover</a></li>
+
+        <li><a href="join.html">Join</a></li>
+
+        <li><a href="directory.html">Directory</a></li>
+
+    </ul>
+
 
 </nav>
+
+
 
 <main>
 
     <h1>Discover Kolwezi</h1>
 
-    <section id="visit-message" class="visit-message"></section>
 
-    <section id="discover-cards"></section>
+    <section id="visit-message" class="visit-message" aria-live="polite">
+
+    </section>
+
+
+    <section id="discover-cards" class="discover-grid">
+
+    </section>
+
 
 </main>
 
+
+
 <footer>
 
-    <!-- Utilise exactement le même footer que les autres pages -->
+    <p>
+        © <span id="currentyear"></span> Kolwezi Chamber of Commerce
+    </p>
+
+    <p>
+        Mukadi Tshibangu | WDD 231 Web Development
+    </p>
+
+    <p id="lastModified"></p>
+
 
 </footer>
 
+
 </body>
+
 </html>
