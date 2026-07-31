@@ -1,71 +1,175 @@
-// js/discover.js
+// ======================================
+// WDD 231 - Chamber Discover Page
+// discover.js
+// ======================================
+
 
 import { places } from "../data/places.mjs";
 
+
+// Select elements
+
 const cardsContainer = document.querySelector("#discover-cards");
-
-// Générer les cartes
-places.forEach((place) => {
-    const card = document.createElement("section");
-
-    card.innerHTML = `
-        <h2>${place.name}</h2>
-
-        <figure>
-            <img
-                src="${place.image}"
-                alt="${place.name}"
-                loading="lazy"
-                width="300"
-                height="200">
-        </figure>
-
-        <address>${place.address}</address>
-
-        <p>${place.description}</p>
-
-        <button type="button">${place.button}</button>
-    `;
-
-    cardsContainer.appendChild(card);
-});
-
-// ===== Local Storage =====
-
 const visitMessage = document.querySelector("#visit-message");
+
+
+
+// ======================================
+// Create Place Cards
+// ======================================
+
+
+function displayPlaces(placeList) {
+
+
+    placeList.forEach((place) => {
+
+
+        const card = document.createElement("section");
+
+
+        card.innerHTML = `
+
+            <h2>${place.name}</h2>
+
+
+            <figure>
+
+                <img 
+                src="${place.image}" 
+                alt="${place.name}"
+                width="300"
+                height="200"
+                loading="lazy">
+
+            </figure>
+
+
+            <address>
+                ${place.address}
+            </address>
+
+
+            <p>
+                ${place.description}
+            </p>
+
+
+            <button type="button">
+                Learn More
+            </button>
+
+        `;
+
+
+        cardsContainer.appendChild(card);
+
+
+    });
+
+
+}
+
+
+
+displayPlaces(places);
+
+
+
+
+// ======================================
+// Visitor Message - Local Storage
+// ======================================
+
+
+const today = Date.now();
 
 const lastVisit = localStorage.getItem("lastVisit");
 
-const now = Date.now();
 
-if (!lastVisit) {
+
+if (lastVisit === null) {
+
 
     visitMessage.textContent =
         "Welcome! Let us know if you have any questions.";
 
-} else {
 
-    const milliseconds = now - Number(lastVisit);
+}
 
-    const days = Math.floor(milliseconds / 86400000);
+else {
+
+
+    const difference = today - Number(lastVisit);
+
+
+    const days = Math.floor(
+        difference / (1000 * 60 * 60 * 24)
+    );
+
+
 
     if (days < 1) {
+
 
         visitMessage.textContent =
             "Back so soon! Awesome!";
 
-    } else if (days === 1) {
+
+    }
+
+
+    else if (days === 1) {
+
 
         visitMessage.textContent =
             "You last visited 1 day ago.";
 
-    } else {
+
+    }
+
+
+    else {
+
 
         visitMessage.textContent =
             `You last visited ${days} days ago.`;
 
     }
 
+
 }
 
-localStorage.setItem("lastVisit", now);
+
+
+// Save current visit
+
+localStorage.setItem("lastVisit", today);
+
+
+
+
+
+// ======================================
+// Footer Information
+// ======================================
+
+
+const year = document.querySelector("#currentyear");
+
+const modified = document.querySelector("#lastModified");
+
+
+if (year) {
+
+    year.textContent = new Date().getFullYear();
+
+}
+
+
+if (modified) {
+
+    modified.textContent =
+        `Last Modification: ${document.lastModified}`;
+
+}
