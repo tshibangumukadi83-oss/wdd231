@@ -1,22 +1,299 @@
 /* ======================================
-   WDD 231 - Chamber Discover Page
-   Discover Kolwezi
+WDD 231 - Chamber Discover Page
+Discover Kolwezi
 ====================================== */
 
-/* ===== Variables ===== */
+/* ===== Global Layout ===== */
 
 :root {
-    --primary-color: #0056b3;
-    --dark-color: #003366;
-    --light-color: #eef6ff;
-    --text-color: #333;
-    --border-color: #ddd;
+--primary-color: #0056b3;
+--dark-color: #003366;
+--light-color: #eef6ff;
+--text-color: #333;
+--border-color: #ddd;
 }
 
-/* Le bloc main a été supprimé car il est déjà dans chamber.css */
+main {
+max-width: 1200px;
+margin: 0 auto;
+padding: 1rem;
+}
 
 h1 {
-    text-align: center;
-    color: var(--dark-color);
-    margin: 1rem 0 2rem;
+text-align: center;
+color: var(--dark-color);
+margin: 1rem 0 2rem;
+}
+
+/* ===== Visitor Message ===== */
+
+.visit-message {
+
+background-color: var(--light-color);  
+color: var(--dark-color);  
+
+border-left: 5px solid var(--primary-color);  
+
+padding: 1rem;  
+
+margin-bottom: 2rem;  
+
+border-radius: 6px;  
+
+font-weight: bold;
+
+}
+
+/* ======================================
+Discover Cards
+====================================== */
+
+#discover-cards {
+
+display: grid;  
+
+gap: 1.5rem;  
+
+
+grid-template-areas:  
+
+    "a"  
+
+    "b"  
+
+    "c"  
+
+    "d"  
+
+    "e"  
+
+    "f"  
+
+    "g"  
+
+    "h";
+
+}
+
+#discover-cards section:nth-child(1) {
+grid-area: a;
+}
+
+#discover-cards section:nth-child(2) {
+grid-area: b;
+}
+
+#discover-cards section:nth-child(3) {
+grid-area: c;
+}
+
+#discover-cards section:nth-child(4) {
+grid-area: d;
+}
+
+#discover-cards section:nth-child(5) {
+grid-area: e;
+}
+
+#discover-cards section:nth-child(6) {
+grid-area: f;
+}
+
+#discover-cards section:nth-child(7) {
+grid-area: g;
+}
+
+#discover-cards section:nth-child(8) {
+grid-area: h;
+}
+
+#discover-cards section {
+
+background-color: white;  
+
+
+border: 1px solid var(--border-color);  
+
+
+border-radius: 10px;  
+
+
+padding: 1rem;  
+
+
+overflow: hidden;  
+
+
+box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+}
+
+#discover-cards h2 {
+
+text-align: center;  
+
+color: var(--dark-color);  
+
+margin-bottom: 1rem;
+
+}
+
+#discover-cards figure {
+
+margin: 0;
+
+}
+
+#discover-cards img {
+
+width: 100%;  
+
+
+height: 200px;  
+
+
+object-fit: cover;  
+
+
+border-radius: 8px;
+
+}
+
+#discover-cards address {
+
+font-style: normal;  
+
+
+color: #555;  
+
+
+margin: 1rem 0;
+
+}
+
+#discover-cards p {
+
+line-height: 1.5;  
+
+
+color: var(--text-color);
+
+}
+
+#discover-cards button {
+
+width: 100%;  
+
+
+margin-top: 1rem;  
+
+
+padding: .8rem;  
+
+
+border: none;  
+
+
+border-radius: 5px;  
+
+
+background-color: var(--primary-color);  
+
+
+color: white;  
+
+
+font-size: 1rem;  
+
+
+cursor: pointer;
+
+}
+
+#discover-cards button:hover {
+
+background-color: var(--dark-color);
+
+}
+
+/* ======================================
+Medium Screens
+641px - 1024px
+====================================== */
+
+@media screen and (min-width:641px) {
+
+#discover-cards {  
+
+
+    grid-template-columns: repeat(2, 1fr);  
+
+
+    grid-template-areas:  
+
+
+        "a b"  
+
+        "c d"  
+
+        "e f"  
+
+        "g h";  
+
+
+}  
+
+
+
+#discover-cards img {  
+
+
+    transition: transform .3s ease,  
+                filter .3s ease,  
+                box-shadow .3s ease;  
+
+
+}  
+
+
+
+#discover-cards img:hover {  
+
+
+    transform: scale(1.05);  
+
+
+    filter: brightness(110%);  
+
+
+    box-shadow: 0 0 15px rgba(0,0,0,.4);  
+
+
+}
+
+}
+
+/* ======================================
+Large Screens
+1025px and above
+====================================== */
+
+@media screen and (min-width:1025px) {
+
+#discover-cards {  
+
+
+    grid-template-columns: repeat(4,1fr);  
+
+
+    grid-template-areas:  
+
+
+        "a b c d"  
+
+        "e f g h";  
+
+
+}
+
 }
