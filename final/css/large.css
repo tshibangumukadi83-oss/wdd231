@@ -1,0 +1,173 @@
+/* =========================================================
+   DISCOVER DR CONGO
+   Large Screen Styles
+   ========================================================= */
+
+@media screen and (min-width: 640px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        padding: 1rem 5%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-basis: auto;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    nav a {
+        border: none;
+        padding: 0.6rem 0.9rem;
+        border-radius: 5px;
+    }
+
+
+    /* ---------- MAIN ---------- */
+
+    main {
+        width: min(90%, 1200px);
+    }
+
+
+    /* ---------- HERO ---------- */
+
+    .hero {
+        margin-left: 0;
+        margin-right: 0;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .hero img {
+        min-height: 500px;
+    }
+
+    .hero-text {
+        padding: 3rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2.5rem;
+        max-width: 800px;
+    }
+
+    .hero-text p {
+        font-size: 1.15rem;
+        max-width: 650px;
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- DESTINATIONS ---------- */
+
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+
+    /* ---------- FEATURED ---------- */
+
+    #featured-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
+    /* ---------- FORM ---------- */
+
+    form {
+        padding: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 900px) {
+
+    /* ---------- HEADER ---------- */
+
+    header {
+        padding-left: max(5%, calc((100% - 1200px) / 2));
+        padding-right: max(5%, calc((100% - 1200px) / 2));
+    }
+
+    .logo h1 {
+        font-size: 1.6rem;
+    }
+
+
+    /* ---------- DESTINATIONS ---------- */
+
+    .places-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* ---------- FEATURED ---------- */
+
+    #featured-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    /* ---------- STATS ---------- */
+
+    .cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+    /* ---------- TYPOGRAPHY ---------- */
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .page-title {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    /* ---------- HERO ---------- */
+
+    .hero-text {
+        padding: 4rem;
+    }
+
+    .hero-text h2 {
+        font-size: 3rem;
+    }
+
+
+    /* ---------- DESTINATIONS ---------- */
+
+    .places-grid {
+        gap: 2rem;
+    }
+
+
+    /* ---------- FEATURED ---------- */
+
+    #featured-container {
+        gap: 2rem;
+    }
+
+}
