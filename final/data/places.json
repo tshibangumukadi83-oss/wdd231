@@ -1,0 +1,152 @@
+[
+    {
+        "id": 1,
+        "name": "Virunga National Park",
+        "province": "North Kivu",
+        "category": "National Park",
+        "description": "One of Africa's most remarkable protected areas, known for mountain gorillas, forests, volcanoes, and diverse wildlife.",
+        "address": "Eastern Democratic Republic of the Congo",
+        "image": "images/virunga.webp",
+        "alt": "Mountain landscape in Virunga National Park"
+    },
+    {
+        "id": 2,
+        "name": "Nyiragongo Volcano",
+        "province": "North Kivu",
+        "category": "Volcano",
+        "description": "A spectacular active volcano near Goma, famous for its dramatic volcanic landscape and summit views.",
+        "address": "Near Goma, North Kivu",
+        "image": "images/nyiragongo.webp",
+        "alt": "Nyiragongo volcano landscape"
+    },
+    {
+        "id": 3,
+        "name": "Kivu Lake",
+        "province": "South Kivu",
+        "category": "Lake",
+        "description": "A beautiful Great Lakes region destination surrounded by green hills and lakeside communities.",
+        "address": "Bukavu and Goma region",
+        "image": "images/lake-kivu.webp",
+        "alt": "Lake Kivu surrounded by green hills"
+    },
+    {
+        "id": 4,
+        "name": "Garamba National Park",
+        "province": "Haut-Uele",
+        "category": "National Park",
+        "description": "A large protected area in northeastern Congo containing savanna landscapes, forests, and important wildlife habitats.",
+        "address": "Haut-Uele Province",
+        "image": "images/garamba.webp",
+        "alt": "Savanna landscape in Garamba National Park"
+    },
+    {
+        "id": 5,
+        "name": "Salonga National Park",
+        "province": "Central Congo",
+        "category": "National Park",
+        "description": "One of Africa's largest tropical rainforest reserves, offering an extraordinary environment for forest wildlife.",
+        "address": "Central Basin of the Democratic Republic of the Congo",
+        "image": "images/salonga.webp",
+        "alt": "Dense tropical rainforest in Salonga National Park"
+    },
+    {
+        "id": 6,
+        "name": "Upemba National Park",
+        "province": "Haut-Lomami",
+        "category": "National Park",
+        "description": "A scenic protected area featuring lakes, wetlands, mountains, forests, and a wide variety of wildlife.",
+        "address": "Haut-Lomami Province",
+        "image": "images/upemba.webp",
+        "alt": "Landscape of Upemba National Park"
+    },
+    {
+        "id": 7,
+        "name": "Lac Tanganyika",
+        "province": "Tanganyika",
+        "category": "Lake",
+        "description": "One of the world's great freshwater lakes, with beautiful shorelines and important aquatic ecosystems.",
+        "address": "Kalemie, Tanganyika Province",
+        "image": "images/tanganyika.webp",
+        "alt": "Lake Tanganyika shoreline"
+    },
+    {
+        "id": 8,
+        "name": "Wagenia Falls",
+        "province": "Tshopo",
+        "category": "Waterfall",
+        "description": "A spectacular section of the Congo River near Kisangani, associated with the traditional fishing practices of the Wagenia people.",
+        "address": "Kisangani, Tshopo Province",
+        "image": "images/wagenia.webp",
+        "alt": "Congo River rapids near Kisangani"
+    },
+    {
+        "id": 9,
+        "name": "Kisantu Botanical Garden",
+        "province": "Kongo Central",
+        "category": "Botanical Garden",
+        "description": "A green destination where visitors can discover a wide range of tropical plants and enjoy a peaceful natural environment.",
+        "address": "Kisantu, Kongo Central",
+        "image": "images/kisantu.webp",
+        "alt": "Tropical vegetation at Kisantu Botanical Garden"
+    },
+    {
+        "id": 10,
+        "name": "Kinshasa",
+        "province": "Kinshasa",
+        "category": "City",
+        "description": "The capital and largest city of the Democratic Republic of the Congo, located along the Congo River.",
+        "address": "Kinshasa, Democratic Republic of the Congo",
+        "image": "images/kinshasa.webp",
+        "alt": "Kinshasa city landscape"
+    },
+    {
+        "id": 11,
+        "name": "Lubumbashi",
+        "province": "Haut-Katanga",
+        "category": "City",
+        "description": "A major city in southeastern Congo known for its cultural life, gardens, architecture, and economic importance.",
+        "address": "Lubumbashi, Haut-Katanga",
+        "image": "images/lubumbashi.webp",
+        "alt": "Lubumbashi city landscape"
+    },
+    {
+        "id": 12,
+        "name": "Kolwezi",
+        "province": "Lualaba",
+        "category": "City",
+        "description": "A growing city in the Copperbelt region surrounded by natural landscapes, mining heritage, and nearby attractions.",
+        "address": "Kolwezi, Lualaba Province",
+        "image": "images/kolwezi.webp",
+        "alt": "Kolwezi city and surrounding landscape"
+    },
+    {
+        "id": 13,
+        "name": "Lofoi Falls",
+        "province": "Haut-Katanga",
+        "category": "Waterfall",
+        "description": "A spectacular waterfall in southeastern Congo surrounded by forests and impressive natural scenery.",
+        "address": "Upemba region, southeastern Congo",
+        "image": "images/lofoi.webp",
+        "alt": "Lofoi waterfall surrounded by forest"
+    },
+    {
+        "id": 14,
+        "name": "Idjwi Island",
+        "province": "South Kivu",
+        "category": "Island",
+        "description": "A large island in Lake Kivu known for its green landscapes, rural communities, and peaceful lakeside environment.",
+        "address": "Lake Kivu, South Kivu",
+        "image": "images/idjwi.webp",
+        "alt": "Green landscape of Idjwi Island"
+    },
+    {
+        "id": 15,
+        "name": "Congo River",
+        "province": "Multiple Provinces",
+        "category": "River",
+        "description": "One of Africa's greatest rivers, crossing a vast part of the country and supporting communities, ecosystems, and transportation.",
+        "address": "Democratic Republic of the Congo",
+        "image": "images/congo-river.webp",
+        "alt": "Congo River landscape"
+    }
+]
