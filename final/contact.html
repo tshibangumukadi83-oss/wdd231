@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Discover DR Congo</title>
+
+    <meta name="description" content="Contact Discover DR Congo to share your questions, suggestions, or experiences about traveling in the Democratic Republic of the Congo.">
+    <meta name="author" content="Mukadi Tshibangu">
+
+    <meta property="og:title" content="Contact | Discover DR Congo">
+    <meta property="og:description" content="Contact us about discovering the Democratic Republic of the Congo.">
+    <meta property="og:image" content="images/hero.webp">
+    <meta property="og:url" content="https://tshibangumukadi83-oss.github.io/wdd231/final/contact.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <script type="module" src="js/main.js" defer></script>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>Discover DR Congo</h1>
+    </div>
+
+    <button id="menu" aria-label="Open Navigation">
+        ☰
+    </button>
+
+    <nav id="navigation">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="destinations.html">
+            Destinations
+        </a>
+
+        <a href="contact.html" class="active">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="page-title">
+
+        <h2>Contact Us</h2>
+
+        <p>
+            Do you have a question, suggestion, or experience
+            you would like to share?
+        </p>
+
+    </section>
+
+
+    <section class="form-section">
+
+        <form action="thanks.html" method="get">
+
+            <label for="first-name">
+                First Name
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="first-name"
+                name="firstName"
+                required
+                autocomplete="given-name"
+                title="Please enter your first name">
+
+
+            <label for="last-name">
+                Last Name
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="last-name"
+                name="lastName"
+                required
+                autocomplete="family-name"
+                title="Please enter your last name">
+
+
+            <label for="email">
+                Email Address
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                autocomplete="email"
+                title="Please enter a valid email address">
+
+
+            <label for="province">
+                Province
+            </label>
+
+            <select id="province" name="province">
+
+                <option value="">
+                    Select a province
+                </option>
+
+                <option value="Lualaba">
+                    Lualaba
+                </option>
+
+                <option value="Haut-Katanga">
+                    Haut-Katanga
+                </option>
+
+                <option value="Kinshasa">
+                    Kinshasa
+                </option>
+
+                <option value="North Kivu">
+                    North Kivu
+                </option>
+
+                <option value="South Kivu">
+                    South Kivu
+                </option>
+
+                <option value="Tanganyika">
+                    Tanganyika
+                </option>
+
+                <option value="Kongo Central">
+                    Kongo Central
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <label for="subject">
+                Subject
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                title="Please enter a subject">
+
+
+            <label for="message">
+                Message
+                <span aria-hidden="true">*</span>
+            </label>
+
+            <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                title="Please enter your message"></textarea>
+
+
+            <label class="checkbox-label">
+
+                <input
+                    type="checkbox"
+                    name="newsletter"
+                    value="yes">
+
+                I would like to receive information about
+                DR Congo destinations.
+
+            </label>
+
+
+            <button type="submit" class="button">
+                Send Message
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+
+    <p>
+        © <span id="year"></span> Mukadi Tshibangu
+    </p>
+
+    <p>
+        <a href="attributions.html">
+            Attributions
+        </a>
+    </p>
+
+    <p>
+        <a href="https://youtube.com/" target="_blank" rel="noopener">
+            Project Video
+        </a>
+    </p>
+
+</footer>
+
+</body>
+
+              </html>
